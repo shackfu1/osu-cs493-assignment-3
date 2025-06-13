@@ -6,6 +6,7 @@ const sequelize = require('./lib/sequelize')
 
 const app = express()
 const port = process.env.PORT || 8000
+process.env.JWT_SECRET_KEY = 'somethingunguessable';
 
 /*
  * Morgan is a popular logger.
